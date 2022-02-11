@@ -16,52 +16,56 @@
         <form>
                 <hr id="topline">
                 <hr>
-                <legend class="labels">Contact Information</legend>
-                    <label for="name" class="info">Full Name</label>
-                    <input type="text" id="name" name="user_name" class="box" placeholder="Required"><br>
+                    <div>
+                        <legend class="labels">Contact Information</legend>
+                        <label for="name" class="info">Full Name</label>
+                        <input type="text" id="name" name="user_name" class="box" placeholder="Required"><br>
 
-                    <label for="mail" class="info">E-mail</label>
-                    <input type="email" id="mail" name="user_email" class="box" placeholder="Required"><br>
+                        <label for="mail" class="info">E-mail</label>
+                        <input type="email" id="mail" name="user_email" class="box" placeholder="Required"><br>
 
-                    <label for="phone" class="info">Phone Number</label>
-                    <input type="tel" id="phone" name="user_phone" class="box"><br>
+                        <label for="phone" class="info">Phone Number</label>
+                        <input type="tel" id="phone" name="user_phone" class="box"><br>
 
-                    <label for="address" class="info">Street Address</label>
-                    <input type="text" id="address" name="user_address" class="box"><br>
+                        <label for="address" class="info">Street Address</label>
+                        <input type="text" id="address" name="user_address" class="box"><br>
 
-                    <label for="city" class="info">City</label>
-                    <input type="text" id="city" name="user_city" class="box"><br>
+                        <label for="city" class="info">City</label>
+                        <input type="text" id="city" name="user_city" class="box"><br>
 
-                    <label for="state" class="info">State</label>
-                    <input type="text" id="state" name="user_state" class="box" placeholder="Choose State"><br>
+                        <label for="state" class="info">State</label>
+                        <input type="text" id="state" name="user_state" class="box" placeholder="Choose State"><br>
 
-                    <label for="zip" class="info">Zip Code</label>
-                    <input type="number" id="zip" name="user_zip" class="zipbox"><br>
+                        <label for="zip" class="info">Zip Code</label>
+                        <input type="number" id="zip" name="user_zip" class="zipbox"><br>
+                    </div>
                 <hr>
-                <legend class="labels">Newsletter</legend>
-                    <p>Select the newsletter you would like to recieve</p>
+                    <div>
+                            <legend class="labels">Newsletter</legend>
+                            <p>Select the newsletter you would like to recieve</p>
 
-                    <label for="html_news" class="tags">HTML News</label>
-                    <input type="checkbox" id="html_news" name="user_html" class="news"><br>
+                            <input type="checkbox" id="html_news" name="user_html" class="news">
+                            <label for="html_news" class="tags">HTML News</label><br>
+                            
+                            <input type="checkbox" id="css_news" name="user_css" class="news">
+                            <label for="css_news" class="tags">CSS News</label><br>
+                            
+                            <input type="checkbox" id="javascript_news" name="user_javascript" class="news">
+                            <label for="javascript_news" class="tags">Javascript News</label>
+                            
+                            <p>Newsletter format</p>
 
-                    <label for="css_news" class="tags">CSS News</label>
-                    <input type="checkbox" id="css_news" name="user_css" class="news"><br>
-
-                    <label for="javascript_news" class="tags">Javascript News</label>
-                    <input type="checkbox" id="javascript_news" name="user_javascript" class="news">
-
-                    <p>Newsletter format</p>
-
-                    <label for="preference">HTML</label>
-                    <input type="radio" id="preference" name="user_preference">
-                    <br>
-                    <label for="preference">Plain Text</label>
-                    <input type="radio" id="preference" name="user_preference">
-
-                    <p>Other topics you'd like to hear about</p>
-                    <textarea name="topics" id="topics" cols="30" rows="10"></textarea>
-                    <br>
-                    <button type="submit">Sign Up</button>
+                            <input type="radio" id="preference" name="user_preference">
+                            <label for="preference">HTML</label>
+                            <br>
+                            <input type="radio" id="preference" name="user_preference">
+                            <label for="preference">Plain Text</label>
+                        
+                            <p>Other topics you'd like to hear about</p>
+                            <textarea name="topics" id="topics" cols="30" rows="10"></textarea>
+                            <br>
+                            <button type="submit">Sign Up</button>
+                    </div>
         </form>
       </div>
 </body>

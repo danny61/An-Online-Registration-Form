@@ -55,7 +55,6 @@ hr {
     width: 40em;
     height: 3.5em;
     border-radius: 5px;
-    float: right;
     margin: 1em;
     background-color:#eff0f1;
 }
@@ -67,7 +66,6 @@ hr {
     width: 10em;
     height: 3.5em;
     border-radius: 5px;
-    float: right;
     margin-right: 31em;
     background-color: #eff0f1;
 }
@@ -85,14 +83,3 @@ input#state{
 }
 
 /*  CHECKBOX STYLING      */
-
-.news {
-    float: left;
-    width: 5%;
-    display: block;
-    clear: both;
-}
-
-.tags{
-
-}
