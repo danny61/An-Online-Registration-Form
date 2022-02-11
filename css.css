@@ -5,8 +5,8 @@
 /*Wrapped the page so it's cenetered and gave it overall properties */
 
 #page-wrap {
-    width: 768px;
     margin: 0 auto;
+    width: 768px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
@@ -36,23 +36,31 @@ hr {
 /* LITERAL CONTACT INFORMATION AND NEWSLETTER HEADING TEXT*/
 .labels{
     margin-top: 1em;
+    margin-bottom: 1em;
     padding-top: 1em;
     font-size: 1.5em;
     font-weight: bold;
 }
 
-/* INFO HEADINGS NAME, EMAIL, NUMBER ETC.   */
-
-
 /* INPUT BOX STYLING  */
 
+::placeholder {
+    color: rgba(187, 179, 179, 0.801);
+}
+
 input {
-    border: 1px solid grey;
+    background-color: #eff0f1;
+    border: none;
   }
+
+.contact-info {
+    border: none;
+}
 
 #contact .contact-info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .contact-info input {
@@ -71,7 +79,6 @@ input {
 
   #zip{
     max-width: 50%;
-
   }
 
 /* PLACEHOLDER STYLING */
@@ -79,6 +86,7 @@ input {
 input{
     text-align: right;
     font-style: italic;
+    font-display: 2%;
 }
 
 input#state{
@@ -86,7 +94,48 @@ input#state{
     font-style: normal;
 }
 
-/*  CHECKBOX STYLING      */
+/*  CHECKBOX STYLING  */
+
+#html_news,
+#css_news,
+#javascript_news {
+    margin-top: 20px;
+}
+
+#preference{
+    margin-top: 20px;
+
+}
+
+#some-format {
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+/*    TEXT AREA AND BUTTON STYLING   */
+
+button {
+    width: 100%;
+    border: none;
+    padding: 20px 40px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    background-color: #30acac;
+    border-radius: .3rem;
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #eff0f1;
+    border: none;
+}
+
+
+
+/* Media Query */
 
 @media (min-width: 768px) {
 .contact-info #contact {

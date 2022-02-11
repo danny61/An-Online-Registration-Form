@@ -45,24 +45,24 @@
                     <div>
                             <legend class="labels">Newsletter</legend>
                             <p>Select the newsletter you would like to recieve</p>
-
-                            <input type="checkbox" id="html_news" name="user_html" class="news">
-                            <label for="html_news" class="tags">HTML News</label><br>
-                            
-                            <input type="checkbox" id="css_news" name="user_css" class="news">
-                            <label for="css_news" class="tags">CSS News</label><br>
-                            
-                            <input type="checkbox" id="javascript_news" name="user_javascript" class="news">
-                            <label for="javascript_news" class="tags">Javascript News</label>
-                            
+                            <div id="some-news">
+                                <input type="checkbox" id="html_news" name="user_html" class="news">
+                                <label for="html_news" class="tags">HTML News</label><br>
+                                
+                                <input type="checkbox" id="css_news" name="user_css" class="news">
+                                <label for="css_news" class="tags">CSS News</label><br>
+                                
+                                <input type="checkbox" id="javascript_news" name="user_javascript" class="news">
+                                <label for="javascript_news" class="tags">Javascript News</label>
+                            </div> 
                             <p>Newsletter format</p>
-
-                            <input type="radio" id="preference" name="user_preference">
-                            <label for="preference">HTML</label>
-                            <br>
-                            <input type="radio" id="preference" name="user_preference">
-                            <label for="preference">Plain Text</label>
-                        
+                            <div id="some-format">
+                                <input type="radio" id="preference" name="user_preference">
+                                <label for="preference">HTML</label>
+                                <br>
+                                <input type="radio" id="preference" name="user_preference">
+                                <label for="preference">Plain Text</label>
+                            </div>
                             <p>Other topics you'd like to hear about</p>
                             <textarea name="topics" id="topics" cols="30" rows="10"></textarea>
                             <br>
