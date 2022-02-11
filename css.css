@@ -5,7 +5,7 @@
 /*Wrapped the page so it's cenetered and gave it overall properties */
 
 #page-wrap {
-    width: 800px;
+    width: 768px;
     margin: 0 auto;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
@@ -33,7 +33,7 @@ hr {
     color: #bbb5b5c0;
 }
 
-/* CONTACT INFORMATION AND NEWSLETTER HEADING TEXT*/
+/* LITERAL CONTACT INFORMATION AND NEWSLETTER HEADING TEXT*/
 .labels{
     margin-top: 1em;
     padding-top: 1em;
@@ -43,32 +43,36 @@ hr {
 
 /* INFO HEADINGS NAME, EMAIL, NUMBER ETC.   */
 
-.info {
-    display: inline-block;
-    margin: 2em;
-}
 
 /* INPUT BOX STYLING  */
 
-.box {
-    display: inline-block;
-    width: 40em;
-    height: 3.5em;
-    border-radius: 5px;
-    margin: 1em;
-    background-color:#eff0f1;
+input {
+    border: 1px solid grey;
+  }
+
+#contact .contact-info {
+    display: flex;
+    flex-direction: column;
 }
 
-/* ZIPCODE INPUT BOX STYLING  */
+.contact-info input {
+    height: 50px;
+    margin-bottom: 15px;
+  }
 
-#zip{
-    display: block;
-    width: 10em;
-    height: 3.5em;
-    border-radius: 5px;
-    margin-right: 31em;
-    background-color: #eff0f1;
-}
+.contact-info label {
+    margin-bottom: 10px;
+  }
+  
+.contact-info input {
+    height: 50px;
+    margin-bottom: 15px;
+  }
+
+  #zip{
+    max-width: 50%;
+
+  }
 
 /* PLACEHOLDER STYLING */
 
@@ -83,3 +87,21 @@ input#state{
 }
 
 /*  CHECKBOX STYLING      */
+
+@media (min-width: 768px) {
+.contact-info #contact {
+    flex-direction: row;
+}
+.contact-info input {
+    flex-grow: 1;
+    flex-basis: 75%;
+}
+.contact-info label {
+    flex-basis: 25%;
+    height:50px;
+    margin: auto 0;
+}
+#zip {
+    max-width: 25%;
+}
+}
