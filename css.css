@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Wrapped the page so it's cenetered and gave it overall properties */
+
+#page-wrap {
+    width: 800px;
+    margin: 0 auto;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: black;
+}
+
+#topline {
+    border: none;
+    height: 4px;
+    background-color: black;
+}
+
+/* HEADING/TOP OF THE PAGE */
+#intro {
+    text-align: center;
+    padding: 1em;
+}
+
+#subheading {
+    margin-top: -10px;
+    color: #bbb5b5c0;
+}
+
+/* CONTACT INFORMATION AND NEWSLETTER HEADING TEXT*/
+.labels{
+    margin-top: 1em;
+    padding-top: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* INFO HEADINGS NAME, EMAIL, NUMBER ETC.   */
+
+.info {
+    display: inline-block;
+    margin: 2em;
+}
+
+/* INPUT BOX STYLING  */
+
+.box {
+    display: inline-block;
+    width: 40em;
+    height: 3.5em;
+    border-radius: 5px;
+    float: right;
+    margin: 1em;
+    background-color:#eff0f1;
+}
+
+/* ZIPCODE INPUT BOX STYLING  */
+
+#zip{
+    display: block;
+    width: 10em;
+    height: 3.5em;
+    border-radius: 5px;
+    float: right;
+    margin-right: 31em;
+    background-color: #eff0f1;
+}
+
+/* PLACEHOLDER STYLING */
+
+input{
+    text-align: right;
+    font-style: italic;
+}
+
+input#state{
+    text-align: left;
+    font-style: normal;
+}
+
+/*  CHECKBOX STYLING      */
+
+.news {
+    float: left;
+    width: 5%;
+    display: block;
+    clear: both;
+}
+
+.tags{
+
+}
