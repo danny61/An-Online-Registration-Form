@@ -6,8 +6,17 @@
 
 #page-wrap {
     margin: 0 auto;
-    width: 768px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    max-width: 768px;
+    font-family: Merriweather;
+}
+
+header {
+    background-color: #30acac;
+}
+
+#toptop {
+    color:whitesmoke
+
 }
 
 hr {
@@ -33,6 +42,13 @@ hr {
     color: #bbb5b5c0;
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: #66636362;
+    transition: 500ms;
+}
+
 /* LITERAL CONTACT INFORMATION AND NEWSLETTER HEADING TEXT*/
 .labels{
     margin-top: 1em;
@@ -45,6 +61,7 @@ hr {
 /* INPUT BOX STYLING  */
 
 ::placeholder {
+    text-align: right;
     color: rgba(187, 179, 179, 0.801);
 }
 
@@ -81,17 +98,18 @@ input {
     max-width: 50%;
   }
 
-/* PLACEHOLDER STYLING */
+/* PLACEHOLDER + SECTION STYLING  */
 
 input{
-    text-align: right;
     font-style: italic;
     font-display: 2%;
 }
 
-input#state{
-    text-align: left;
-    font-style: normal;
+#state{
+    width: 75%;
+    margin-bottom: 10px;
+    background-color: #eff0f1;
+    border: none;
 }
 
 /*  CHECKBOX STYLING  */
@@ -133,13 +151,17 @@ textarea {
     border: none;
 }
 
-
+/*  NEWSLETTER FIELDSET   */
+#bottom-box{
+    border: none;
+}
 
 /* Media Query */
 
-@media (min-width: 768px) {
+@media (min-width: 300px) {
 .contact-info #contact {
-    flex-direction: row;
+    flex-direction: column;
+    align-items: auto;
 }
 .contact-info input {
     flex-grow: 1;
