@@ -7,7 +7,7 @@
 #page-wrap {
     margin: 0 auto;
     max-width: 768px;
-    font-family: Merriweather;
+    font-family: raleway;
 }
 
 header {
@@ -95,14 +95,13 @@ input {
   }
 
   #zip{
-    max-width: 50%;
+    max-width: 25%;
   }
 
 /* PLACEHOLDER + SECTION STYLING  */
 
 input{
     font-style: italic;
-    font-display: 2%;
 }
 
 #state{
@@ -112,7 +111,15 @@ input{
     border: none;
 }
 
-/*  CHECKBOX STYLING  */
+
+/*FLEXBOX NEWSLETTER STYLING*/
+
+#news-box, #bottom-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: none;
+}
 
 #html_news,
 #css_news,
@@ -120,15 +127,15 @@ input{
     margin-top: 20px;
 }
 
-#preference{
-    margin-top: 20px;
-
+#text, #html-pref, #topics{
+    margin-bottom: 20px;
 }
 
-#some-format {
-    margin-top: -10px;
-    margin-bottom: 30px;
+label[for=topics]{
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
+
 
 /*    TEXT AREA AND BUTTON STYLING   */
 
@@ -151,17 +158,12 @@ textarea {
     border: none;
 }
 
-/*  NEWSLETTER FIELDSET   */
-#bottom-box{
-    border: none;
-}
 
 /* Media Query */
 
-@media (min-width: 300px) {
+@media (min-width: 768px) {
 .contact-info #contact {
     flex-direction: column;
-    align-items: auto;
 }
 .contact-info input {
     flex-grow: 1;
@@ -173,6 +175,6 @@ textarea {
     margin: auto 0;
 }
 #zip {
-    max-width: 25%;
+    max-width: 50%;
 }
 }
