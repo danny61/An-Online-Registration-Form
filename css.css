@@ -52,7 +52,7 @@ select:focus {
 /* LITERAL CONTACT INFORMATION AND NEWSLETTER HEADING TEXT*/
 .labels{
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: .2em;
     padding-top: 1em;
     font-size: 1.5em;
     font-weight: bold;
@@ -81,11 +81,15 @@ input {
 }
 
 .contact-info input {
+    display: flex;
+    flex-basis: 100%;
     height: 50px;
     margin-bottom: 15px;
   }
 
 .contact-info label {
+    display: flex;
+    flex-basis: 100%;
     margin-bottom: 10px;
   }
   
@@ -95,8 +99,20 @@ input {
   }
 
   #zip{
-    max-width: 25%;
+    max-width: 50%;
   }
+
+  #state {
+    padding: 15px;
+
+  }
+
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: #9c9ea162;
+    transition: 500ms;
+}
 
 /* PLACEHOLDER + SECTION STYLING  */
 
@@ -175,6 +191,6 @@ textarea {
     margin: auto 0;
 }
 #zip {
-    max-width: 50%;
+    max-width: 25%;
 }
 }
