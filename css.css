@@ -44,7 +44,7 @@ hr {
 
 input:focus,
 textarea:focus,
-select:focus {
+#state:focus {
     background-color: #66636362;
     transition: 500ms;
 }
@@ -89,7 +89,7 @@ input {
 
 .contact-info label {
     display: flex;
-    flex-basis: 100%;
+    flex-basis: 50%;
     margin-bottom: 10px;
   }
   
@@ -99,17 +99,18 @@ input {
   }
 
   #zip{
-    max-width: 50%;
+    max-width: 100%;
   }
 
   #state {
+    display: flex;
     padding: 15px;
-
+    min-width: 45%;
   }
 
 input:focus,
 textarea:focus,
-select:focus {
+#state:focus {
     background-color: #9c9ea162;
     transition: 500ms;
 }
